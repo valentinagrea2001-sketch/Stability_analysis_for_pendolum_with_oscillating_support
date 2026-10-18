@@ -1,6 +1,6 @@
 # Lyapunov stability analysis for a pendolum with periodically oscillating suspension point
 
-This repository contains a Mathematica-based computational project investigating the Lyapunov stability and instability regions of a pendulum with a periodically oscillating suspension point. You will find, in the pdf, the plots of instability regions in the space of coordinates $(\alpha, k)$.
+This repository contains a Mathematica-based computational project investigating the Lyapunov stability and instability regions near the equilibria of a pendulum with a periodically oscillating suspension point. You will find, in the pdf, the plots of instability regions in the space of coordinates $(\alpha, k)$.
 
 
 ## The mathematical model:
@@ -46,7 +46,7 @@ Because the system preserves the volume, stability is determined efficiently via
 
 ## Why did I use Wolfram Mathematica for this analysis?
 
-1) Wolfram Mathematica is a $symbolic language$, which means that everything in the language — mathematical formulas, data, code, and graphics — is represented as a symbolic expression. This allows to easily transition from analytical math to heavy numerical simulations. ( Example: setting up differential equations and variational systems and solving them) .
+1) Wolfram Mathematica is a $symbolic$ $language$, which means that everything in the language — mathematical formulas, data, code, and graphics — is represented as a symbolic expression. This allows to easily transition from analytical math to heavy numerical simulations. ( Example: setting up differential equations and variational systems and solving them) .
 
 2) Wolfram Mathematica has built-in tools like $Compile$ that can dramatically speed up intensive iterative algorithms ( Example: running thousands of Runge-Kutta integration steps ).
 
