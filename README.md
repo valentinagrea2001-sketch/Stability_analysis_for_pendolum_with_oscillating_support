@@ -1,6 +1,6 @@
 # Lyapunov stability analysis for a pendolum with periodically oscillating suspension point
 
-This repository contains a Mathematica-based computational project investigating the Lyapunov stability and instability regions near the equilibria of a pendulum with a periodically oscillating suspension point. You will find, in the pdf, the plots of instability regions in the space of coordinates $(\alpha, k)$.
+This repository contains a Wolfram Mathematica-based computational project investigating the Lyapunov stability and instability regions near the equilibria of a pendulum with a periodically oscillating suspension point. You will find, in the pdf, the plots of instability regions in the space of coordinates $(\alpha, k)$.
 
 
 ## The mathematical model:
