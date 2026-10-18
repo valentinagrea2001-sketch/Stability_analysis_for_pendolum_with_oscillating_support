@@ -2,9 +2,34 @@
 
 This repository contains a Mathematica-based computational project investigating the Lyapunov stability and instability regions of a pendulum with a periodically oscillating suspension point. 
 
-By analyzing the Period Shift Map (Poincaré Map) and its linearization through the monodromy matrix, this project maps out the Lyapunov stability and instability zones in the parameter space $(\alpha, k)$ for both the lower equilibrium $(0,0)$ and the upper equilibrium $(\pi, 0)$.Mathematical ModelThe equation of motion after time rescaling is given by:
-$$x'' = -(\alpha^2 - k \cos(t)) \sin(x)$$
-where $k = a/l \leq 2$.In the Quotient Extended Phase Space $S^1 \times \mathbb{R} \times S^1$, the system is formulated as a system of ODEs:$x' = v$$v' = -(\alpha^2 - k \cos(t)) \sin(x)$$t' = 1 \pmod{2\pi}$Orbits correspond to fixed points of the Period Shift Map $\Psi_{\alpha,k} = \phi_{2\pi,\theta}$. Because the system preserves volume, the product of the eigenvalues of the linearized map is $1$. Stability is determined efficiently via the trace criterion:Lyapunov Stable: $\vert{}\text{Tr}(\Psi_{\alpha,k}')\vert{} \leq 2$Lyapunov Unstable: $\vert{}\text{Tr}(\Psi_{\alpha,k}')\vert{} > 2$Implementation DetailsNumerical Integration: Utilizes a custom second-order Runge-Kutta (RK2) scheme implemented with Wolfram Mathematica's Compile feature for optimized performance.Variational Equations: Separate vector fields and solvers are defined for tracking the lower equilibrium $(0,0)$ and upper equilibrium $(\pi,0)$.Random Sampling: Parameter space exploration is performed by generating large random distributions of $(\alpha, k)$ pairs and evaluating the trace of the monodromy matrix.
+**Mathematical Model**:
+
+The equation of motion after time rescaling is given by
+
+$x'' = -(\alpha^2 - k \cos(t)) \sin(x)$
+
+where $k = a/l \leq 2$.
+
+In the Quotient Extended Phase Space $S^1 \times \mathbb{R} \times S^1$, the system is formulated as a system of ODEs:
+
+\begin{cases}
+$x' = v$ \\
+
+$v' = -(\alpha^2 - k \cos(t)) \sin(x)$ \\
+
+$t' = 1 \pmod{2\pi}$ \\
+\end{cases}
+
+There, orbits correspond to fixed points of the Period Shift Map $\Psi_{\alpha,k} = \phi_{2\pi,\theta}$.
+
+Because the system preserves the volume, stability is determined efficiently via the trace criterion:
+
+- *Lyapunov Stable*: $\vert{}\text{Tr}(\Psi_{\alpha,k}')\vert{} \leq 2$
+
+- *Lyapunov Unstable*: $\vert{}\text{Tr}(\Psi_{\alpha,k}')\vert{} > 2$
+
+
+Implementation DetailsNumerical Integration: Utilizes a custom second-order Runge-Kutta (RK2) scheme implemented with Wolfram Mathematica's Compile feature for optimized performance.Variational Equations: Separate vector fields and solvers are defined for tracking the lower equilibrium $(0,0)$ and upper equilibrium $(\pi,0)$.Random Sampling: Parameter space exploration is performed by generating large random distributions of $(\alpha, k)$ pairs and evaluating the trace of the monodromy matrix.
 
 ## Key Results & Plots Instability Tongues for $(0,0)$: 
 
