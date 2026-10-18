@@ -4,11 +4,11 @@ This repository contains a Mathematica-based computational project investigating
 
 **Mathematical Model**:
 
-The equation of motion after time rescaling is given by
+The equation of motion, after time rescaling, is given by
 
 $x'' = -(\alpha^2 - k \cos(t)) \sin(x)$
 
-where $k = a/l \leq 2$.
+where $k = a/l \leq 2$, $a$ is the amplitude of oscillations, $l$ is the length of pendolum, and $(x,t)\in S^{1} \times \mathbb{R}$.
 
 In the Quotient Extended Phase Space $S^1 \times \mathbb{R} \times S^1$, the system is formulated as a system of ODEs:
 
