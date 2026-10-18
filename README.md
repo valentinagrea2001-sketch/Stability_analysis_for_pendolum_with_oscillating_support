@@ -2,7 +2,7 @@
 
 This repository contains a Mathematica-based computational project investigating the Lyapunov stability and instability regions of a pendulum with a periodically oscillating suspension point. 
 
-**Mathematical Model**:
+## The mathematical model:
 
 The equation of motion, after time rescaling, is given by
 
@@ -12,13 +12,13 @@ where $k = a/l \leq 2$, $a$ is the amplitude of oscillations, $l$ is the length 
 
 In the Quotient Extended Phase Space $S^1 \times \mathbb{R} \times S^1$, the system is formulated as a system of ODEs:
 
+$$
 \begin{cases}
-$x' = v$ \\
-
-$v' = -(\alpha^2 - k \cos(t)) \sin(x)$ \\
-
-$t' = 1 \pmod{2\pi}$ \\
+x' = v \\
+v' = -(\alpha^2 - k \cos(t)) \sin(x) \\
+t' = 1 \pmod{2\pi}
 \end{cases}
+$$
 
 There, orbits correspond to fixed points of the Period Shift Map $\Psi_{\alpha,k} = \phi_{2\pi,\theta}$.
 
